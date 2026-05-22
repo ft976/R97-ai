@@ -1,11 +1,73 @@
-<div align="center">
+# R97 AI Assistant
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+![R97 AI Hero](./src/assets/images/r97_ai_hero_1779413676098.png)
 
-  <h1>Built with AI Studio</h2>
+![R97 AI](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
+![NVIDIA Llama 3.1](https://img.shields.io/badge/AI-NVIDIA%20Llama%203.1-blue?style=for-the-badge)
+![Gemini Live](https://img.shields.io/badge/Voice-Gemini%20Flash%20Live-orange?style=for-the-badge)
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+**R97 AI** is a premium, full-stack intelligence platform designed by **Rehan Ahmad**. It combines the reasoning power of NVIDIA's Llama 3.1 with the real-time emotional resonance of Gemini Live.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+---
 
-</div>
+## ⚡ Core Capabilities
+
+![Features](./src/assets/images/r97_ai_features_1779413695377.png)
+
+### 🧠 Dual-Engine Intelligence
+- **Deep Reasoning**: Powered by **NVIDIA NIM (Meta Llama 3.1)** for complex problem solving and detailed text responses.
+- **Vocal Resonance**: Integrated **Gemini 1.5 Flash Live** for ultra-low latency, emotionally aware voice interactions.
+
+### 🌐 Global Web Intelligence
+- **Live Search**: Real-time integration with global search engines and specialized data sources like Wikipedia and Reddit.
+- **Tuning Modes**: Toggle between **Compact** (speed-focused) and **Full** (depth-focused) search intelligence.
+
+### 🗣️ Linguistic Mirroring
+- **Native Tongues**: Advanced support for English, Hindi, and **Hinglish**.
+- **Style Sync**: The AI automatically adopts the language, tone, and slang of the user for a truly native feel.
+
+### 🛡️ Privacy & Logic
+- **Smart Formatting**: Automatically filters noise (URLs, code blocks) during voice synthesis for a cleaner experience.
+- **Security**: Built-in filters for handling sensitive content and ensuring safe interaction.
+
+---
+
+## 🛠️ Architecture
+
+- **Frontend**: React 18, Vite, Tailwind CSS, Framer Motion.
+- **Backend**: Node.js (Express) with esbuild optimization.
+- **Models**: NVIDIA Llama 3.1 NIM & Gemini Multimodal Live API.
+- **Styling**: Cyber-Pixel aesthetic with custom-tuned HUD elements.
+
+---
+
+## 👨‍💻 Developer
+
+**R97 AI** is the signature project of **Rehan Ahmad**.
+- **GitHub**: [Ft976](https://github.com/Ft976)
+- **LinkedIn**: [Rehan Ahmad](https://www.linkedin.com/in/rehan-ahmad-863386382?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+
+---
+
+## ⚖️ Legal & Documentation
+
+For detailed information on the usage, privacy, and development of R97 AI, please refer to:
+
+- **[License](./LICENSE)** - MIT License information.
+- **[Privacy Policy](./PRIVACY.md)** - How we handle your data.
+- **[Terms of Service](./TERMS.md)** - Guidelines for usage and AI behavior.
+- **[Contributing](./CONTRIBUTING.md)** - How to help improve the project.
+- **[Security](./SECURITY.md)** - Reporting vulnerabilities.
+
+---
+
+## 🚀 Deployment
+
+Must configure the following environment variables:
+```env
+NVIDIA_API_KEY=your_key
+GEMINI_API_KEY=your_key
+```
+
+Copyright © 2026 Rehan Ahmad. All Rights Reserved.
+
