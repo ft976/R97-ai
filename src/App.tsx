@@ -306,9 +306,7 @@ export default function App() {
         { role: "user", content: userText }
       ];
 
-      const apiUrl = import.meta.env.DEV 
-        ? "/cors-proxy/nvidia/v1/chat/completions"
-        : "https://integrate.api.nvidia.com/v1/chat/completions";
+      const apiUrl = "/api/nvidia/v1/chat/completions";
 
       const response = await fetch(apiUrl, {
         method: "POST",
@@ -934,21 +932,6 @@ export default function App() {
 
                 <div className="flex justify-between items-center px-3 pb-3">
                   <div className="flex items-center gap-1">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setSearchMode(prev => {
-                          if (prev === "disabled") return "compact";
-                          if (prev === "compact") return "standard";
-                          return "disabled";
-                        });
-                      }}
-                      className="text-black bg-yellow-100 font-bold pixel-border-sm hover:bg-yellow-200 px-3 py-1.5 text-[8px] font-pixel active:translate-y-0.5 transition-all ml-1.5 flex items-center gap-1.5 uppercase tracking-wider shadow-[1px_1px_0_rgba(0,0,0,1)] hover:shadow-none"
-                      title="Click to cycle Web Search: Compact ⚡ | Full 🎯 | Off ❌"
-                    >
-                      <Sparkles className="w-3 h-3 text-yellow-600 shrink-0" />
-                      Search: {searchMode === "compact" ? "⚡ COMPACT" : searchMode === "standard" ? "🎯 FULL" : "❌ OFF"}
-                    </button>
                   </div>
 
                   {isLoading ? (
