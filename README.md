@@ -1,5 +1,9 @@
 # R97 AI Assistant
 
+<p align="center">
+  <img src="./public/logo.png" width="128" height="128" alt="R97 AI Logo">
+</p>
+
 ![R97 AI Hero](./src/assets/images/r97_ai_hero_1779413676098.png)
 
 ![R97 AI](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
@@ -19,8 +23,7 @@
 - **Vocal Resonance**: Integrated **Gemini 1.5 Flash Live** for ultra-low latency, emotionally aware voice interactions.
 
 ### 🌐 Global Web Intelligence
-- **Live Search**: Real-time integration with global search engines and specialized data sources like Wikipedia and Reddit.
-- **Tuning Modes**: Toggle between **Compact** (speed-focused) and **Full** (depth-focused) search intelligence.
+- **Live Search**: Real-time integration with global search engines and specialized data sources.
 
 ### 🗣️ Linguistic Mirroring
 - **Native Tongues**: Advanced support for English, Hindi, and **Hinglish**.

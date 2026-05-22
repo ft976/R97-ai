@@ -516,7 +516,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex h-screen bg-pixel-sky text-black font-pixel text-[10px] md:text-xs overflow-hidden leading-relaxed">
+    <div className="flex h-[100dvh] bg-pixel-sky text-black font-pixel text-[10px] md:text-xs overflow-hidden leading-relaxed">
       {/* Sidebar Overlay on Mobile */}
       {isSidebarOpen && (
         <div
@@ -581,7 +581,7 @@ export default function App() {
       {/* Main Chat Area */}
       <div className="flex-1 flex flex-col h-full relative max-w-full">
         {/* Header */}
-        <header className="flex items-center justify-between p-3 border-b-[4px] border-black bg-white sticky top-0 z-10">
+        <header className="flex items-center justify-between p-3 border-b-[4px] border-black bg-white sticky top-0 z-10 shrink-0">
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -589,9 +589,12 @@ export default function App() {
             >
               <Menu className="w-5 h-5" />
             </button>
-            <h1 className="font-pixel text-[12px] md:text-sm pt-1 uppercase tracking-widest font-bold">
-              R97 AI
-            </h1>
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" alt="R97 AI Logo" className="w-8 h-8" style={{ imageRendering: 'pixelated' }} />
+              <h1 className="font-pixel text-[12px] md:text-sm pt-1 uppercase tracking-widest font-bold">
+                R97 AI
+              </h1>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <button
@@ -983,7 +986,6 @@ export default function App() {
             </div>
 
             <div className="p-6 overflow-y-auto font-sans text-sm pb-8 space-y-6 text-black">
-              {/* Developer / Creator Info */}
               <div className="bg-sky-50 border-2 border-black p-4 space-y-3 relative shadow-[3px_3px_0_rgba(0,0,0,1)]">
                 <div className="absolute -top-3 left-4 bg-sky-200 border-2 border-black px-2 uppercase text-[10px] font-bold font-pixel tracking-widest text-black">
                   System Creator
@@ -1019,6 +1021,18 @@ export default function App() {
                       </a>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Privacy & Security */}
+              <div className="bg-indigo-50 border-2 border-black p-4 space-y-3 relative shadow-[3px_3px_0_rgba(0,0,0,1)]">
+                <div className="absolute -top-3 left-4 bg-indigo-200 border-2 border-black px-2 uppercase text-[10px] font-bold font-pixel tracking-widest text-black">
+                  Security Details
+                </div>
+                <div className="pt-2 text-xs text-gray-700 space-y-2 leading-relaxed">
+                  <p>
+                    <strong>Local Data Storage:</strong> All chat histories and configurations are saved strictly to your local browser using client-side storage mechanisms. We do not persist data to an external server.
+                  </p>
                 </div>
               </div>
               
